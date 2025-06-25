@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breeze Cool</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/p.css">
+    <link rel="stylesheet" href="nieve/nieve.css">
+    <script src="nieve/nieve.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navigation">
+        <div class="navLeft">
+            <a href="#">BREEZE COOL</a>
+        </div>
+        <div class="navCenter">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#contacto">Contáctanos</a></li>
+                <li class="nav-item"><a href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a href="#trabajos">Galería de Trabajos realizados</a></li>
+                <li class="nav-item"><a href="#atencion">Atención</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- INICIO (fuera del grid para estilo especial) -->
+    <section id="inicio" class="content container my-4">
+        <div class="content-left">
+            <h3><b>Somos tu mejor opción</b></h3>
+            <p>
+                En <strong>Breeze Cool</strong>, somos tu aliado confiable en el mantenimiento y reparación de aires acondicionados y refrigeradoras. 
+                Brindamos un servicio profesional para asegurar que tu equipo funcione con eficiencia, ahorrando energía y garantizando frescura en tu hogar o negocio.
+            </p>
+        </div>
+        <div class="content-right">
+            <img src="img/logob.jpg" alt="Logo Breeze Cool" />
+        </div>
+    </section>
+
+    <!-- GRID CONTENEDOR PARA SECCIONES -->
+    <div class="grid-container container">
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section-box text-center">
+            <h1>📞<b>Contáctanos</b></h1>
+            <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+                <a href="https://wa.me/50586427497" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="60" />
+                </a>
+                <a href="mailto:breezecool.servicios@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" width="60" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61567472897839" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="60" />
+                </a>
+                <a href="https://www.tiktok.com/@breeze.cool1?_t=ZM-8xUj1SuFm46&_r=1" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" width="60" />
+                </a>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section-box">
+            <h2>Servicios que ofrecemos</h2>
+            <ul>
+                <li>🛠️ Instalación</li>
+                <li>🛠️ Reparación</li>
+                <li>🛠️ Limpieza</li>
+                <li>🛠️ Mantenimiento</li>
+                <li>🛠️ Desinstalación</li>
+                <li>🛠️ Recarga de gas</li>
+                <li>🛠️ Diagnóstico y levantamientos gratis</li>
+            </ul>
+        </section>
+
+        <!-- TRABAJOS -->
+        <section id="trabajos" class="section-box">
+            <h2 class="mb-4">🛠️ Galería de Trabajos realizados</h2>
+
+            <div id="trabajosCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner" id="carousel-inner"></div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#trabajosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#trabajosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+
+                <div class="carousel-indicators" id="carousel-indicators"></div>
+            </div>
+        </section>
+
+        <!-- ATENCIÓN -->
+        <section id="atencion" class="section-box">
+            <h2>🚚 Atención en León, alrededores y toda Nicaragua</h2>
+            <ul>
+                <li>📍 León Centro, Sutiaba, Zaragoza</li>
+                <li>📍 San Felipe, Suburbios, Fundeci</li>
+                <li>📍 La Ceiba, carretera a Poneloya</li>
+                <li>✅ Servicio a domicilio con garantía</li>
+            </ul>
+
+            <p>Atendemos a toda Nicaragua con servicio rápido y confiable.</p>
+    <!-- MAPA Google Maps León -->
+    <div class="map-responsive container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.892765828093!2d-86.87577728465014!3d12.437131791509642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71087a1e59d7f5%3A0x9a03a85170a9ce7b!2sLe%C3%B3n%2C%20Nicaragua!5e0!3m2!1ses!2sni!4v1687710000000!5m2!1ses!2sni"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de León, Nicaragua">
+        </iframe>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+   <footer>
+  &copy; 2025 Breeze Cool — Todos los derechos reservados
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="nieve/trbajos.js"></script>
+</body>
+</html>
